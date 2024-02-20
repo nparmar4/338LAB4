@@ -1,0 +1,5 @@
+# Question 1
+The reverse() function has a time complexity of O(n^2). The first loop iterates over the linked list from the end, going through each element once, so it has a complexity of O(n). Inside the loop, the line "currNode = self.get_element_at_pos(i)" means we are accessing elements from n-1, n-2,+...+1, 0, which follows a quadratic pattern, therefore having a complexity of O(n^2). The "if" statements are constant and do not depend on the size of the list. Thus, the most dominant time complexity is O(n^2).
+
+# Question 2
+In the optimized version,we store next_node temporarily while we reverse the pointer of current_node to point to the prev_node, then move prev_node to current_node and current_node to next_node. This approach eliminates the need to access elements by position within the loop. This eliminates the quadratic equation from earlier, resulting in a linear time complexity of O(n) instead of O(n^2).
