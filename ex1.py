@@ -66,3 +66,15 @@ array.append(5)
 print(array.binary_search(8))  # Output: Number 3 found at index 2.
 
 #this code was generated using chatGPT but was significantly modified to provide accurate results 
+
+#Binary search on a linked list is not as efficient as it is on an array. This is because arrays have direct access to elements based on their index, while linked lists require traversal from the beginning of the list to reach a specific element.
+
+#In a linked list, you can't directly access the middle element 
+#without traversing the list from the beginning. This means that even if 
+#you find the middle element, you still have to traverse the first half of the list to reach it.
+# This traversal takes O(n/2) time, where n is the number of elements in the list.
+#So, even though the search space is halved with each comparison, the time complexity is still O(n/2) 
+#for the first comparison, O(n/4) for the second, O(n/8) for the third, and so on. In general, the time complexity of binary search on a 
+#linked list is O(log n) for a list with n elements.
+
+#this code was generated using chatGPT but was significantly modified to provide accurate results 
